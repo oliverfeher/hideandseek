@@ -83,8 +83,10 @@ doorImage3.onclick = funct => {
 };
 
 startButton.onclick = () => {
-  startRound();
-};
+    if(currentlyPlaying === false) {
+    startRound();
+    };
+  };
 
 
 const startRound = () => {
